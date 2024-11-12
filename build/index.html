@@ -1,0 +1,463 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>AirWings Airlines</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="\img\favicons\favicons.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__logo">
+					<a href="" class="logo">
+						<img src="./img/logo/logo.svg" alt="" />
+					</a>
+				</div>
+
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__list-item"><a class="nav__list-link" href="#!">Главная</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#schedule-st">Рейсы</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#services-st">Услуги</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#ticket-st">Билеты</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#blog-st">Блог</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#about-us-st">О нас</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#contact-st">Контакты</a></li>
+						<li class="nav__list-item"><a class="nav__list-link" href="#partners-st">Партнеры</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__account header__account--first">
+					<ul class="account">
+						<li class="account__menu">
+							<button class="mobile-nav-btn">
+								<div class="nav-icon"></div>
+							</button>
+						</li>
+
+						<li>
+							<a href="#!">
+								<svg class="icon icon--person">
+									<use href="./img/svgsprite/sprite.symbol.svg#person"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mobile-nav">
+		<div class="mobile-nav__links">
+			<ul class="mobile-links">
+				<li class="mobile-links__parent">
+					<button class="mobile-links__parent-btn">
+						<span class="mobile-links__parent-title">Главная</span>
+						<svg class="mobile-links__parent-btn__icon icon icon--arrow-down">
+							<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+						</svg>
+					</button>
+
+					<div class="mobile-sub">
+						<ul class="mobile-sub-list">
+						<li class="mobile-sub-list__item"><a href="#schedule-st" class="mobile-sub-list__link">Рейсы</a></li>
+						<li class="mobile-sub-list__item"><a href="#services-st" class="mobile-sub-list__link">Услуги</a></li>
+						<li class="mobile-sub-list__item"><a href="#ticket-st" class="mobile-sub-list__link">Билеты</a></li>
+						<li class="mobile-sub-list__item"><a href="#blog-st" class="mobile-sub-list__link">Блог</a></li>
+						<li class="mobile-sub-list__item"><a href="#about-us-st" class="mobile-sub-list__link">О нас</a></li>
+						<li class="mobile-sub-list__item"><a href="#contact-st" class="mobile-sub-list__link">Контакты</a></li>
+						<li class="mobile-sub-list__item"><a href="#partners-st" class="mobile-sub-list__link">Партнеры</a></li>
+						</li>
+						</ul>
+					</div>
+				</li>
+
+							</ul>
+		</div>
+
+		<div class="mobile-nav__btns">
+			<a href="#!" class="btn-outline">
+				<svg class="icon icon--person">
+					<use href="./img/svgsprite/sprite.symbol.svg#person"></use>
+				</svg>
+			Войти
+			</a>
+			<a href="#!" class="btn-outline">Регистрация</a>
+		</div>
+	</div>
+	<main class="docs">
+		<section class="hero">
+			<div class="container">
+				<div class="hero__content">
+					<p class="hero__title">Летай с&#160;нами</p>
+					<p class="hero__subtitle">Путешествуй по&#160;миру с&#160;нашими<br />выгодными авиабилетами.<br />Не&#160;упусти свой шанс!</p>
+					<a href="#!" class="btn">Начать путешествие</a>
+					<picture>
+						<source srcset="\img\hero\hero.webp 1x, \img\hero\hero@2x.webp 2x" type="image/webp" />
+						<source srcset="\img\hero\hero.png 1x, \img\hero\hero@2x.png 2x" type="image/png" />
+						<img src="\img\hero\hero.png" class="hero__image" alt="" />
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="schedule">
+			<div class="container">
+				<h1 id="schedule-st" class="title-1">Расписание рейсов</h1>
+
+				<table id="flightsTable" class="flight-table">
+					<thead class="schedule__main">
+						<tr>
+							<th>Рейс</th>
+							<th>Откуда</th>
+							<th>Куда</th>
+							<th>Время вылета</th>
+							<th>Время в&#160;полете</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr data-flight="SU1234">
+							<td>SU1234</td>
+							<td>Москва</td>
+							<td>Санкт-Петербург</td>
+							<td>10:00</td>
+							<td>1ч 30&#160;м</td>
+						</tr>
+						<tr data-flight="SU5678">
+							<td>SU5678</td>
+							<td>Москва</td>
+							<td>Нижний Новгород</td>
+							<td>12:00</td>
+							<td>1ч 10&#160;м</td>
+						</tr>
+						<tr data-flight="SU9101">
+							<td>SU9101</td>
+							<td>Москва</td>
+							<td>Калининград</td>
+							<td>14:00</td>
+							<td>2ч 0&#160;м</td>
+						</tr>
+						<tr data-flight="SU7890">
+							<td>SU7890</td>
+							<td>Москва</td>
+							<td>Сочи</td>
+							<td>16:30</td>
+							<td>2ч 45&#160;м</td>
+						</tr>
+						<tr data-flight="SU9876">
+							<td>SU9876</td>
+							<td>Санкт-Петербург</td>
+							<td>Екатеринбург</td>
+							<td>09:00</td>
+							<td>2ч 30&#160;м</td>
+						</tr>
+						<tr data-flight="AZ6543">
+							<td>AZ6543</td>
+							<td>Новосибирск</td>
+							<td>Ростов-на-Дону</td>
+							<td>18:15</td>
+							<td>2ч 10&#160;м</td>
+						</tr>
+						<tr data-flight="S75678">
+							<td>S75678</td>
+							<td>Казань</td>
+							<td>Омск</td>
+							<td>12:45</td>
+							<td>2ч 0&#160;м</td>
+						</tr>
+						<tr data-flight="U67890">
+							<td>U67890</td>
+							<td>Пермь</td>
+							<td>Самара</td>
+							<td>14:30</td>
+							<td>1ч 45&#160;м</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<div class="position__title">
+					<h2 id="services-st" class="title-1">Услуги</h2>
+				</div>
+
+				<div class="services__main">
+					<div class="services__main-block">
+						<div class="service__content">
+							<div class="service__content-title">
+								<h3>Выбор места</h3>
+								<p>
+									Вы&#160;можете выбрать место в&#160;салоне самолета в&#160;соответствии<br />
+									с&#160;вашими предпочтениями.
+								</p>
+							</div>
+
+							<picture>
+								<source srcset="\img\services\services-1.webp 1x, \img\services\services-1@2x.webp 2x" type="image/webp" />
+								<source srcset="\img\services\services-1.png 1x, \img\services\services-1@2x.png 2x" type="image/png" />
+								<img src="\img\services\services-1.png" alt="Выбор места" class="service__image img" />
+							</picture>
+						</div>
+
+						<div class="service__content">
+							<div class="service__content-title">
+								<h3>Питание</h3>
+								<p>На&#160;борту предлагается разнообразное меню, включающее горячие и&#160;холодные блюда.</p>
+							</div>
+
+							<picture>
+								<source srcset="\img\services\services-2.webp 1x, \img\services\services-2@2x.webp 2x" type="image/webp" />
+								<source srcset="\img\services\services-2.png 1x, \img\services\services-2@2x.png 2x" type="image/png" />
+								<img src="\img\services\services-2.png" alt="Питание" class="service__image img" />
+							</picture>
+						</div>
+					</div>
+
+					<div class="services__main-block">
+						<div class="service__content">
+							<div class="service__content-title">
+								<h3>Развлечения</h3>
+								<p>Во&#160;время полета доступны развлекательные программы, музыка и&#160;фильмы.</p>
+							</div>
+
+							<picture>
+								<source srcset="\img\services\services-3.webp 1x, \img\services\services-3@2x.webp 2x" type="image/webp" />
+								<source srcset="\img\services\services-3.png 1x, \img\services\services-3@2x.png 2x" type="image/png" />
+								<img src="\img\services\services-3.png" alt="Развлечения" class="service__image img" />
+							</picture>
+						</div>
+
+						<div class="service__content">
+							<div class="service__content-title">
+								<h3>Багаж</h3>
+								<p>У&#160;нас есть различные тарифы на&#160;багаж, чтобы вы&#160;могли выбрать наиболее подходящий вариант для вас.</p>
+							</div>
+
+							<picture>
+								<source srcset="\img\services\services-4.webp 1x, \img\services\services-4@2x.webp 2x" type="image/webp" />
+								<source srcset="\img\services\services-4.png 1x, \img\services\services-4@2x.png 2x" type="image/png" />
+								<img src="\img\services\services-4.png" alt="Багаж" class="service__image img" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="ticket-st" class="ticket">
+			<div class="ticket-form">
+				<div class="container">
+					<form action="#" method="post">
+						<div class="form-group">
+							<label for="departure-city">Отправление:</label>
+							<select id="departure-city" name="departure-city">
+								<option value="Москва">Москва</option>
+								<option value="Санкт-Петербург">Санкт-Петербург</option>
+								<option value="Санкт-Петербург">Краснодар</option>
+								<option value="Санкт-Петербург">Рязань</option>
+								<option value="Санкт-Петербург">Астрахань</option>
+								<option value="Санкт-Петербург">Волгоград</option>
+								<option value="Санкт-Петербург">Сочи</option>
+
+								<!-- Добавьте другие города -->
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="arrival-city">Прибытие:</label>
+							<select id="arrival-city" name="arrival-city">
+								<option value="Москва">Москва</option>
+								<option value="Санкт-Петербург">Санкт-Петербург</option>
+								<option value="Санкт-Петербург">Краснодар</option>
+								<option value="Санкт-Петербург">Рязань</option>
+								<option value="Санкт-Петербург">Астрахань</option>
+								<option value="Санкт-Петербург">Волгоград</option>
+								<option value="Санкт-Петербург">Сочи</option>
+								<!-- Добавьте другие города -->
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="date">Дата:</label>
+							<input type="date" id="date" name="date" />
+						</div>
+						<div class="form-group">
+							<label for="passengers">Количество пассажиров:</label>
+							<input type="number" id="passengers" name="passengers" min="1" max="5" />
+						</div>
+						<div class="form-group">
+							<label for="type">Тип билета:</label>
+							<select id="type" name="type">
+								<option value="basic">Базовый</option>
+								<option value="comfort">Комфортный</option>
+								<option value="business">Бизнес</option>
+							</select>
+						</div>
+						<a href="#!" class="btn">Купить билет</a>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="blog">
+    
+    <div class="container py-5">
+        <h2 id="blog-st" class="swiper_title title-1">Наши партнеры</h2>
+        <div class="row">
+            <!-- Блок 1 -->
+            <div class="col-lg-6 mb-4">
+                <article>
+                    <img src="\img\blog\195156.png" alt="Blog Post Image" class="w-100">
+                    <h2>Новости авиакомпании: наши партнеры вводят льготные билеты</h2>
+                    <p>
+                        Мы рады объявить, что наши партнеры вводят специальные льготные авиабилеты для студентов и пенсионеров! Это позволит нашим пассажирам путешествовать с комфортом и удобством по доступным ценам.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Блок 2 -->
+            <div class="col-lg-6 mb-4">
+                <article>
+                    <img src="\img\blog\slide5.png" alt="Blog Post Image" class="w-100">
+                    <h2>Безопасность полетов: Ведущие стандарты в авиации</h2>
+                    <p>
+                        Наша авиакомпания продолжает поддерживать высочайшие стандарты безопасности для всех наших рейсов. Мы регулярно проводим проверки и обновляем наш парк самолетов.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+		<section class="about-us">
+			<div class="container">
+				<h2 class="title-1" id="about-us-st">О&#160;нас</h2>
+
+				<!-- О компании -->
+				<div class="about-us__section">
+					<p class="title-5 position__text">
+						Наша компания была основана в&#160;2005 году и&#160;с&#160;тех пор предоставляет надежные и&#160;комфортные авиационные услуги. Мы&#160;гордимся тем, что
+						завоевали доверие наших клиентов благодаря высокому уровню сервиса и&#160;конкурентным ценам.
+					</p>
+				</div>
+
+				<!-- Наша миссия -->
+				<div class="about-us__section">
+					<h3 class="title-2">Наша миссия</h3>
+					<p class="title-5 position__text">
+						Наша миссия заключается в&#160;обеспечении безопасных, комфортных и&#160;надежных авиаперевозок. Мы&#160;стремимся предложить нашим пассажирам выдающийся
+						сервис и&#160;инновационные решения, которые вдохновляют их&#160;открывать для себя мир.
+					</p>
+				</div>
+
+				<!-- История успеха -->
+				<div class="about-us__section">
+					<h3 class="title-2">История успеха</h3>
+					<p class="title-5 position__text">
+						За&#160;время своей работы мы&#160;расширили сеть маршрутов, внедрили современные технологии и&#160;непрерывно улучшаем качество наших услуг. Мы&#160;гордимся
+						тем, что являемся надежным выбором для миллионов пассажиров по&#160;всему миру.
+					</p>
+				</div>
+
+				<!-- Ключевые преимущества -->
+				<div class="about-us__section">
+					<h3 class="title-2">Ключевые преимущества</h3>
+					<ul class="about-us__list">
+						<li><span>Безопасность:</span> Мы&#160;придаем первостепенное значение безопасности наших пассажиров и&#160;сотрудников.</li>
+						<li><span>Комфорт:</span> Наши современные самолеты оборудованы удобными сиденьями и&#160;предлагают широкий выбор развлечений.</li>
+						<li>
+							<span>Надежность:</span> Мы&#160;гордимся высокой надежностью наших авиаперевозок, а&#160;наши сотрудники всегда готовы оказать помощь в&#160;случае
+							возникновения вопросов.
+						</li>
+					</ul>
+				</div>
+
+				<!-- Контакты -->
+				<div class="about-us__section about-us__contacts">
+					<h3 id="contact-st">Контакты</h3>
+					<div class="contact-item"><span>Email:</span> SkyWings Airlines@email.com</div>
+					<div class="contact-item"><span>Телефон:</span> +798 456 7890</div>
+					<div class="contact-item"><span>Адрес:</span> ул.&#160;Примерная, 123, г.&#160;Москва</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="partners-section">
+					<h2 id="partners-st" class="partners_title title-1">Наши партнеры</h2>
+					<div class="partners-gallery">
+						<div class="partner">
+							<img src="/img/collection/1.svg" alt="Партнер 1" />
+						</div>
+						<div class="partner">
+							<img src="/img/collection/2.svg" alt="Партнер 2" />
+						</div>
+						<div class="partner">
+							<img src="/img/collection/3.svg" alt="Партнер 3" />
+						</div>
+						<div class="partner">
+							<img src="/img/collection/4.svg" alt="Партнер 4" />
+						</div>
+						<div class="partner">
+							<img src="/img/collection/5.svg" alt="Партнер 5" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__links">
+					<ul>
+						<li><a href="#!">О&#160;нас</a></li>
+						<li><a href="#!">Условия использования</a></li>
+						<li><a href="#!">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__copyright">
+					&#169; 2024 SkyWings Airlines. Все права защищены.
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+		<!-- Кнопка "Вверх" -->
+		<div class="scroll-to-top">
+			<a href="#top" class="btn btn-primary rounded-circle"><i class="fas fa-chevron-up"></i></a>
+		</div>
+		
+		<script>
+		window.addEventListener('scroll', function() {
+			const backToTop = document.querySelector('.scroll-to-top');
+			
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				backToTop.style.display = 'block';
+			} else {
+				backToTop.style.display = 'none';
+			}
+		});
+		</script>
+		
+
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+	<script src="./js/index.bundle.js"></script>
+</body>
